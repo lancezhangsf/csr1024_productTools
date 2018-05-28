@@ -1,0 +1,7 @@
+subsystem = ble
+device = SMEM
+store = 0xF
+
+# sleep_fosc_freq
+sleep_fosc_freq = 0x04
+

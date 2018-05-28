@@ -1,0 +1,15 @@
+subsystem=ble
+device=smem
+store=0x000F
+
+# Watchdog Timeout
+wd_timeout = 0x927c
+
+# Default Application Store ID
+app_store_id = {0x01, 0x00, 0x00}
+
+# Cache Mode
+cache_mode = 0x04
+
+# SOSC Recalibration
+sosc_recalibration = {0x03 /* temp_delta */ , 0x93a80 /* time_delta */ }

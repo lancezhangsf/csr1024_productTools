@@ -1,0 +1,95 @@
+Microsoft Windows [版本 6.1.7601]
+版权所有 (c) 2009 Microsoft Corporation。保留所有权利。
+
+D:\WorkSpace\CSR_ProductTool\CS1024_PRODUCTID\CS1024_PRODUCTID\bin\Debug>D:\WorkSpace\CSR102x_SDK-3.1.0\\tools\bin\nvscmd -nvstype SMEM -quiet -norun -trans "SPITRANS=USB SPIPORT=0"  erase
+Success
+
+D:\WorkSpace\CSR_ProductTool\CS1024_PRODUCTID\CS1024_PRODUCTID\bin\Debug>exit
+Microsoft Windows [版本 6.1.7601]
+版权所有 (c) 2009 Microsoft Corporation。保留所有权利。
+
+D:\WorkSpace\CSR_ProductTool\CS1024_PRODUCTID\CS1024_PRODUCTID\bin\Debug>D:\WorkSpace\CSR102x_SDK-3.1.0\\tools\bin\nvscmd -nvstype MTP -quiet -norun -trans "SPITRANS=USB SPIPORT=0"  erase
+Success
+
+D:\WorkSpace\CSR_ProductTool\CS1024_PRODUCTID\CS1024_PRODUCTID\bin\Debug>exit
+Microsoft Windows [版本 6.1.7601]
+版权所有 (c) 2009 Microsoft Corporation。保留所有权利。
+
+D:\WorkSpace\CSR_ProductTool\CS1024_PRODUCTID\CS1024_PRODUCTID\bin\Debug>D:\WorkSpace\CSR102x_SDK-3.1.0\\tools\bin\nvscmd -quiet -nvstype MTP -norun -trans "SPITRANS=USB SPIPORT=0"  burn D:\WorkSpace\CSR102x_SDK-3.1.0\apps\gatt_server\depend_Release_CSR102x_A06\gatt_server.mtp.xuv
+Success
+
+D:\WorkSpace\CSR_ProductTool\CS1024_PRODUCTID\CS1024_PRODUCTID\bin\Debug>exit
+Microsoft Windows [版本 6.1.7601]
+版权所有 (c) 2009 Microsoft Corporation。保留所有权利。
+
+D:\WorkSpace\CSR_ProductTool\CS1024_PRODUCTID\CS1024_PRODUCTID\bin\Debug>D:\WorkSpace\CSR102x_SDK-3.1.0\\tools\bin\SdkStoreConfig -q -i D:\WorkSpace\CSR102x_SDK-3.1.0\apps\gatt_server\depend_Release_CSR102x_A06\otp_dev.stores -r  "1715" -m OTP -s D:\WorkSpace\CSR102x_SDK-3.1.0\\tools\bin --cmdoptions "-nvstype OTP -norun -usb 0 burn" -x D:\WorkSpace\CSR102x_SDK-3.1.0\\tools\lib\CSR102x_A06\early_patch --otpfile D:\WorkSpace\CSR102x_SDK-3.1.0\apps\gatt_server\depend_Release_CSR102x_A06\otp_dev.stores -w 1  --fwversion A06
+
+D:\WorkSpace\CSR_ProductTool\CS1024_PRODUCTID\CS1024_PRODUCTID\bin\Debug>exit
+Microsoft Windows [版本 6.1.7601]
+版权所有 (c) 2009 Microsoft Corporation。保留所有权利。
+
+D:\WorkSpace\CSR_ProductTool\CS1024_PRODUCTID\CS1024_PRODUCTID\bin\Debug>D:\WorkSpace\CSR102x_SDK-3.1.0\\tools\bin\nvscmd -nvstype SMEM -norun   burn D:\WorkSpace\CSR102x_SDK-3.1.0\apps\gatt_server\depend_Release_CSR102x_A06\gatt_server.flash.xuv
+nvscmd, version 3.1.0.385 Release
+Copyright (c) 2010-2017 Qualcomm Technologies International, Ltd.
+All Rights Reserved.
+Qualcomm Technologies International, Ltd. Confidential and Proprietary.
+
+
+Program the SMEM with a single XUV file...
+.
+Success
+
+D:\WorkSpace\CSR_ProductTool\CS1024_PRODUCTID\CS1024_PRODUCTID\bin\Debug>exit
+Microsoft Windows [版本 6.1.7601]
+版权所有 (c) 2009 Microsoft Corporation。保留所有权利。
+
+D:\WorkSpace\CSR_ProductTool\CS1024_PRODUCTID\CS1024_PRODUCTID\bin\Debug>D:\WorkSpace\CSR102x_SDK-3.1.0\\tools\bin\configcmd txt2dev D:\WorkSpace\CSR102x_SDK-3.1.0\\tools\lib\CSR102x_A06\sdk_cfg_store.htf MERGE -trans "SPITRANS=USB SPIPORT=0" -system fht_SDK_3_1_0_315_A06_ROM_1707201539 -database "D:\WorkSpace\CSR102x_SDK-3.1.0\\tools\bin\CSR102x.sdb"
+configcmd.exe, version 3.1.0.385 Release
+Copyright (c) 2010-2017 Qualcomm Technologies International, Ltd.
+All Rights Reserved.
+Qualcomm Technologies International, Ltd. Confidential and Proprietary.
+
+
+reading...
+writing...
+Success
+
+D:\WorkSpace\CSR_ProductTool\CS1024_PRODUCTID\CS1024_PRODUCTID\bin\Debug>exit
+Microsoft Windows [版本 6.1.7601]
+版权所有 (c) 2009 Microsoft Corporation。保留所有权利。
+
+D:\WorkSpace\CSR_ProductTool\CS1024_PRODUCTID\CS1024_PRODUCTID\bin\Debug>D:\WorkSpace\CSR102x_SDK-3.1.0\\tools\bin\CreateCSKey --subsystem "ble" -m SMEM -s 0xF -k "<sleep_fosc_freq, 0x04>" -oD:\WorkSpace\CSR102x_SDK-3.1.0\apps\gatt_server\depend_Release_CSR102x_A06\storeconfigkey.htf
+<sleep_fosc_freq, 0x04
+
+
+D:\WorkSpace\CSR_ProductTool\CS1024_PRODUCTID\CS1024_PRODUCTID\bin\Debug>exit
+Microsoft Windows [版本 6.1.7601]
+版权所有 (c) 2009 Microsoft Corporation。保留所有权利。
+
+D:\WorkSpace\CSR_ProductTool\CS1024_PRODUCTID\CS1024_PRODUCTID\bin\Debug>D:\WorkSpace\CSR102x_SDK-3.1.0\\tools\bin\configcmd txt2dev D:\WorkSpace\CSR102x_SDK-3.1.0\apps\gatt_server\depend_Release_CSR102x_A06\storeconfigkey.htf MERGE -trans "SPITRANS=USB SPIPORT=0" -system fht_SDK_3_1_0_315_A06_ROM_1707201539 -database "D:\WorkSpace\CSR102x_SDK-3.1.0\\tools\bin\CSR102x.sdb
+configcmd.exe, version 3.1.0.385 Release
+Copyright (c) 2010-2017 Qualcomm Technologies International, Ltd.
+All Rights Reserved.
+Qualcomm Technologies International, Ltd. Confidential and Proprietary.
+
+
+reading...
+writing...
+Success
+
+D:\WorkSpace\CSR_ProductTool\CS1024_PRODUCTID\CS1024_PRODUCTID\bin\Debug>exit
+Microsoft Windows [版本 6.1.7601]
+版权所有 (c) 2009 Microsoft Corporation。保留所有权利。
+
+D:\WorkSpace\CSR_ProductTool\CS1024_PRODUCTID\CS1024_PRODUCTID\bin\Debug>D:\WorkSpace\CSR102x_SDK-3.1.0\\tools\bin\configcmd txt2dev D:\WorkSpace\CSR102x_SDK-3.1.0\apps\gatt_server\depend_Release_CSR102x_A06\gatt_server.htf MERGE -trans "SPITRANS=USB SPIPORT=0" -system fht_SDK_3_1_0_315_A06_ROM_1707201539 -database "D:\WorkSpace\CSR102x_SDK-3.1.0\\tools\bin\CSR102x.sdb"
+configcmd.exe, version 3.1.0.385 Release
+Copyright (c) 2010-2017 Qualcomm Technologies International, Ltd.
+All Rights Reserved.
+Qualcomm Technologies International, Ltd. Confidential and Proprietary.
+
+
+reading...
+writing...
+Success
+
+D:\WorkSpace\CSR_ProductTool\CS1024_PRODUCTID\CS1024_PRODUCTID\bin\Debug>exit

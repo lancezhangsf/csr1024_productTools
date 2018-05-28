@@ -1,0 +1,57 @@
+# 1 "gatt_server.htfp"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "./user_config.h" 1
+# 24 "./user_config.h"
+# 1 "../../common/components/connection_manager/cm_appearance.h" 1
+# 25 "./user_config.h" 2
+# 1 "./app_conn_params.h" 1
+# 26 "./user_config.h" 2
+# 1 "../../common/uuid/gatt_uuids.h" 1
+# 14 "../../common/uuid/gatt_uuids.h"
+# 1 "../../common/uuid/gatt_characteristics.h" 1
+# 15 "../../common/uuid/gatt_uuids.h" 2
+# 1 "../../common/uuid/gatt_declarations.h" 1
+# 16 "../../common/uuid/gatt_uuids.h" 2
+# 1 "../../common/uuid/gatt_descriptors.h" 1
+# 17 "../../common/uuid/gatt_uuids.h" 2
+# 1 "../../common/uuid/gatt_services.h" 1
+# 18 "../../common/uuid/gatt_uuids.h" 2
+# 27 "./user_config.h" 2
+# 1 "<command-line>" 2
+# 1 "gatt_server.htfp"
+
+subsystem=ble
+device=smem
+store=0x000f
+
+
+
+app_store_id =
+
+
+
+bdaddr = {0xb925, 0x5b00, 0x02}
+
+
+sleep_mode = sleep_mode_deep
+
+
+battery_threshold = 2100
+
+
+subsystem=ble
+device=mtp
+store=0x0010
+
+
+
+
+
+
+mtp_shadow_key_copy = {0xffff,0xffff,0xffff,0xffff,0xffff,0xffff,0xffff}
+
+app_store_id = {0x0001,0x0001,0x0001}
+
+
+record_store_info = {0xF8000001, 0x0800}
